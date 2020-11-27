@@ -1,5 +1,7 @@
 # Weather-Report
 
+The web appliaction is live at https://weatherinmycity.netlify.app/
+
 A weather web application using API (Open weather map API). You type in the name of the city and get the current temperature, wind speed & pressure for that city
 
 ### Features
