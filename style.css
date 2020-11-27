@@ -7,14 +7,10 @@
 .searchCity {
     height:auto;
     background:#1F2021;
-    
     display:flex;
     align-items: center;
     justify-content: center;
 }
-
-
-
 #city {
     width:30vw;
     height:50%;
@@ -23,8 +19,6 @@
     padding:0 20px;
     border:none;
 }
-
-
 #button {
     width:10vw;
     height:50%;
@@ -34,14 +28,11 @@
     font-size:2rem;
     border:none;
     
-    
 }
-
 #button:hover {
     transform: scale(1.05);
     transition:0.5s;
 }
-
 .firstDiv {
     display:flex;
     justify-content: space-between;
@@ -51,7 +42,6 @@
    font-family: 'Raleway', sans-serif;
     
 }
-
 .test2 {
    width:150%;
     height:250px;
@@ -63,7 +53,6 @@
     display:flex;
     justify-content: center;
     position: relative;
-    
 
 }
 .today {
@@ -71,15 +60,12 @@
     height:85vh;
     background-size:cover;
     background-position: center;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     
 }
-
-
 .next {
     display:flex;
     justify-content: center;
@@ -87,8 +73,6 @@
     background:#1F2021;
     height:40vh;
 }
-
-
 .todayBox {
     width: 60%;
     height: 65vh;
@@ -102,16 +86,12 @@
     box-shadow: 0 0px 50px 30px #888888;
     
 }
-
-
 .clickBox {
     width:20%;
     height:10vh;
     background: hsla(0, 0%, 0%, 0.5);
     border-radius: 50px;
 }
-
-
 .secondDiv {
     position: absolute;
     top:22.5px;
@@ -120,14 +100,12 @@
     border-radius: 0 0 0 25px;
     font-size:70px;
     
-    
 }
 
 h1 {
     font-size:70px;
     color:yellow;
 }
-
 .aboutBox {
     width:20%;
     height:65vh;
@@ -139,8 +117,6 @@ h1 {
     justify-content: center;
     align-items: baseline;
 }
-
-
 .wind {
     width:100%;
     height:10%;
@@ -149,9 +125,7 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size:1.8rem;
-    
 }
-
 .pressure {
     width:100%;
     height:10%;
@@ -160,10 +134,7 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size:1.8rem;
-    
 }
-
-
 @media only screen and (max-width: 700px) {
     .searchCity {
         margin:0;
@@ -188,18 +159,14 @@ h1 {
     .todayBox {
         width:100%;
         height:90vh;
-        
     }
     .firstDiv {
-        padding: 0;
-        
+        padding: 0;     
     }
     h1 {
         margin: 0 auto;
     }
-   
     .aboutBox {
         display:none;
-    }
-    
+    }  
 }
