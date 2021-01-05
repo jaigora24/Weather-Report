@@ -24,36 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadPhoto() {
         var cityName = cityInput.val();
         
-
-        
-        $.ajax({
+$.ajax({
             url: imageUrl
         }).done(function (response) {
             console.log(response)
-            showPhoto(response)
-            
-            
-
+   
         }).fail(function (error) {
             console.log("Invalid")
         })
     }
-    
-    
-     function showPhoto(response) { 
-        
-        $(".cityPhoto").html("<img src="+response.hits[Math.floor(Math.random() * response.hits.length) ].webformatURL+"/>")
-        
-       
-         
-   
-        
-
-    }
-    
-    
-
-    function showWeather(response) { 
+       function showWeather(response) { 
         
          var firstDiv = $(".firstDiv h1");
         firstDiv.text(response.name)
@@ -64,26 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
         var secondDiv = $(".secondDiv").css("fontSize","30");
         
         secondDiv.text(Math.ceil(response.main.temp) + "°")
-        
-        
-        
-        
-             
-        
         var wind = $(".wind")
        wind.html("Wind Speed: " + response.wind.speed + " m/s")
         
         var press = $(".pressure")
        press.html("Pressure: " +  response.main.pressure + " hPa")
-        
-        
-
     }
-    
-    cityButton.on("click", loadWeather);
-    cityButton.on("click", loadPhoto);
-    
-
-
-
+        cityButton.on("click", loadWeather);
 })
+    
